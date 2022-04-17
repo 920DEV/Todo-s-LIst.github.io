@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+}
+header{
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    /* background:linear-gradient(rgba(8, 31, 163, 0.973),rgb(94, 236, 165)); */
+    position: sticky;
+    top: 0px;
+    z-index:2;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2px 0px 0px 0px;   
+    text-decoration: line-through;
+    width: 10vw;
+    font-weight: 900;
+    font-family:'Updock', cursive;
+    font-size: 3rem;
+    color: rgb(218, 218, 218);;
+
+}
+
+header .navbar{
+    height: 100%;
+    display:flex;
+    margin:0px;
+    color: white;
+    width: 79vw;
+    justify-content: center;
+    align-items: center;
+}
+header::-webkit-scrollbar-track{
+    background-color: black;
+}
+#nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+}
+#nav-list li{
+
+    list-style: none;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#nav-list li a{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 130px;
+    position:static;
+    height: 5vh;
+    text-decoration: none;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:normal;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+#active, #nav-list li a:hover{
+    color: black;
+    transition: 0.5s ease-in-out;
+    border-bottom: 1px solid #000;
+}
+.login_link{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.login_link a{
+    color: white;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style:normal;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0px;
+}
+.login_link a:hover{
+    color: black;
+    transition: 0.9s ease-in-out;
+    border-bottom: 1px solid #000;
+}
+
+
+
+/* styiling of the body part  */
+
+.container::before{
+    content:"";
+    position: absolute;
+    background-image: url("../img/2557678.jpg");
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    top: 0px;
+    opacity: 0.9;
+}
+.container{
+    width: 100vw;
+    height: calc(100vh - 80px);
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    width: 100vw;
+    text-decoration: 2px double underline;
+}
+.form-container{
+    display: flex;
+    align-items:center;
+    justify-content:baseline;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+}
+.form-group{
+    width: 50vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+label{
+    font-size: 800;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #ffff;
+}
+input{
+    height: 7vh;
+    border-radius: 5px;
+    border:1px solid #000;
+    padding: 5px 5px;
+    width: 100%;
+    background:transparent;
+    font-weight: 500;
+}
+textarea{
+    border-style: none;
+    border-radius:5px;
+    padding: 10px;
+    border: 1px solid #000; 
+    background:transparent;
+    font-weight: 500;
+    width: 100%;
+    
+
+}
+input,input::before{
+    background-color:#ffff;
+    opacity:0.7;
+}
+textarea,textarea::before{
+    background-color:#ffff;
+    opacity:0.7;
+}
+input::placeholder
+{font-weight: 300;
+font-family:'Updock', cursive;
+color:#000;
+font-size: 1.5rem;
+}
+textarea::placeholder{
+    font-weight: 300;
+font-family:'Updock', cursive;
+color:#000;
+font-size: 1.5rem;
+}
+button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 20px;
+    border-style: none  ;
+    background-color:rgb(126, 126, 202);
+    color: white;
+    font-size: 15px;
+    border-radius:5px;
+}
+button:hover{
+    background-color: rgb(73, 73, 221);
+}
+.container2::before{
+    content:"";
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(rgb(73, 68, 68),#cc6613,rgb(17, 2, 32));
+    position: absolute;
+    z-index: -1; 
+    /* opacity: 0.9; */
+ }
+.container2{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: orange; */
+    margin: 0px auto;
+}
+h2{
+   color: white; 
+   margin-bottom:20px;
+   text-decoration:2px double white underline;
+   font-size: 30px;
+}
+table{
+    width: 80%;
+    height: auto;
+    color: white;
+    table-layout: fixed;
+}
+table,th ,td{
+    border: 2px solid black;
+    padding:5px;
+}
+td{
+    text-align: center;
+}
+#btn-del button{
+    margin: auto auto;
+}
+
+
+/* Styling of the footer part  */

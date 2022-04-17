@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- External CSS  -->
+    <link rel="stylesheet" href="./css/home.css">
+
+
+</head>
+
+<body>
+    <header>
+        <span class="logo"><i>TODO</i></span>
+        <nav class="navbar">
+
+            <ul id="nav-list">
+                <li><a id="active" href="todo_home.html">Home</a></li>
+                <li><a href="about.htm">About Us</a></li>
+                <li><a href=".html">Contact US</a></li>
+                <li><a href="#">Support</a></li>
+
+            </ul>
+        </nav>
+        <span class="login_link"><a href="login.htm">Login/Signup</a></span>
+    </header>
+    <!-- body part -->
+    <main>
+        <div class="container">
+            <h1 id="heading">TODO LIST</h1>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp"
+                        placeholder="Add item to the Title">
+                </div>
+                <div class="form-group">
+                    <label for="desription">Description</label>
+                    <textarea name="discription" id="dis" cols="20" rows="3"
+                        placeholder="Enter Your todo's desription"></textarea>
+                </div>
+                <div class="buttons-bar">
+                    <button type="submit" id="add-btn"> Add</button>
+                    <button id="clr-btn">Clear All</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <h2>Your Todo's List</h2>
+            <table class="table">
+                <thead >
+                    <tr>
+                        <th>S.no</th>
+                        <th>heading </th>
+                        <th>Details</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                        <th></th>
+                        <td></td>
+                        <td></td>
+                        <td id="btn-del"><button>Delete</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+          <a href=""><i class="fa fa-facebook-square" style="font-size:24px"></i></a>
+          <a href=""><i class="fa fa-twitter"style="font-size:24px"></i></a>
+          <a href=""><i class="fa fa-instagram" style="font-size:24px"></i></a>
+        </div>
+      </footer>
+        <!-- Adding Java script -->
+        <script src="js/home.js"></script>
+</body>
+
+</html>
